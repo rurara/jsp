@@ -10,15 +10,7 @@
 function load() {
 	//$('#lotto').load('lotto.jsp')
 	var jq = $.get('lotto.jsp')
-	/*
-				.success(function(data) {
-					$("#lotto").html(data);
-				})
-				.error(function(e) {
-					$("#lotto").html(e);
-				})
-				*/
-				.complete(function(jq.responseText) {
+				.complete(function() {
 					$("#lotto").html(jq.responseText);
 				});
 }
